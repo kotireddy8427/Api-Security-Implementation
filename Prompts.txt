@@ -1,0 +1,10 @@
+Login Form
+-Create a React login form with username/email and password.
+-Validate inputs before sending to /auth/login.
+-Store access token in memory; refresh token via secure HttpOnly cookie (set by backend).
+-Auth Context
+-Create an AuthContext with auth state, login/logout methods, and an axios interceptor for adding tokens and refreshing them on 401.
+-Send frontend audit events (loginAttempt, loginSuccess, loginFailure) to backend /audit.
+-No passwords or sensitive data in logs.
+-Show error messages, lockout countdown, and token expiry notifications.
+-Require re-login if refresh fails.
